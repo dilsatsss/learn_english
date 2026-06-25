@@ -14,7 +14,7 @@ final sessionExpiredStream = StreamController<void>.broadcast();
 class ApiService {
   // Android emülatör için host makinesi adresi 10.0.2.2'dir.
   // Gerçek cihaz veya üretim için bu değeri değiştirin.
-  static const String baseUrl = 'http://192.168.1.119:3000/api';
+  static const String baseUrl = 'http://192.168.1.131:3000/api';
 
   static Future<Map<String, String>> _headers({bool auth = true}) async {
     final h = {'Content-Type': 'application/json'};
