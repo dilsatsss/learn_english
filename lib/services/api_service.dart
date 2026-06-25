@@ -16,6 +16,7 @@ class ApiService {
   // Gerçek cihaz veya üretim için bu değeri değiştirin.
   static const String baseUrl = 'http://192.168.1.131:3000/api';
 
+
   static Future<Map<String, String>> _headers({bool auth = true}) async {
     final h = {'Content-Type': 'application/json'};
     if (auth) {
